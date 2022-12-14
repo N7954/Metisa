@@ -5,24 +5,29 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faNewspaper, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 
+// "Sidebar" web sitesinin sol tarafındaki menü
 const Sidebar = () => (
     <div className='nav-bar'>
         <Link className='logo' to='/'>
             <h2>Metisa</h2>
         </Link>
         <nav>
+            {/* Home bölümü tuşu */}
             <NavLink exact="true" activeclassname="active" to="/">
                 <FontAwesomeIcon icon={faHome} color="#4d44e" />
             </NavLink>
+            {/* Haberler bölümü tuşu */}
             <NavLink exact="true" activeclassname="active" className="news-link" to="/news">
                 <FontAwesomeIcon icon={faNewspaper} color="#4d44e" />
             </NavLink>
+            {/* İletişim bölümü tuşu */}
             <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact">
                 <FontAwesomeIcon icon={faEnvelope} color="#4d44e" />
             </NavLink>
         </nav>
         <ul>
             <li>
+                {/* Metisa'nın instegram hesabına giden tuşu */}
                 <a target="_blank" rel='noreferrer' href='https://instagram.com/metisa_2022?igshid=N2ZiY2E3YmU='>
                     <FontAwesomeIcon icon={faInstagram} color="#4d4d4e"/>
                 </a>
