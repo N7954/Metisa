@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faNewspaper, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 
-// "Sidebar" web sitesinin sol tarafındaki menü
 const Sidebar = () => (
     <div className='nav-bar'>
         <Link className='logo' to='/'>
